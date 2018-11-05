@@ -20,6 +20,7 @@ class VoFooter extends LitElement {
 				}
 		
 				#wrapper {
+					background: var(--vo-footer-background, 'none');
 					max-width: 1040px;
 					width: 100%;
 					margin: auto;
