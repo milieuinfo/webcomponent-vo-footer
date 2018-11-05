@@ -1,4 +1,4 @@
-import { LitElement, html } from "@polymer/lit-element/lit-element";
+import { LitElement, html } from "../../../assets/@polymer/lit-element/lit-element.js";
 
 /**
  * `vo-merklogo` Het logo van de Vlaamse overheid
