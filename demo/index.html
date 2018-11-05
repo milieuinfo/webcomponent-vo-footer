@@ -12,19 +12,44 @@
 			import '../assets/@polymer/iron-demo-helpers/demo-pages-shared-styles.js';
 			import '../vo-footer.js';
 		</script>
-		
-		<style>
-			vo-footer {
-				--vo-footer-background: rgb(51, 51, 51);
-			}
-		</style>
 	</head>
+	
 	<body unresolved>
 		<div class="vertical-section-container centered">
 			<h3>Basis vo-footer demo</h3>
 			<demo-snippet class="centered-demo">
 				<template>
 					<vo-footer></vo-footer>
+				</template>
+			</demo-snippet>
+		</div>
+		
+		<div class="vertical-section-container centered">
+			<h3>Basis vo-footer met achtergrond demo</h3>
+			<demo-snippet class="centered-demo">
+				<template>
+					<style>
+						.custom-1 {
+							--vo-footer-background: rgb(51, 51, 51);
+						}
+					</style>
+					<vo-footer class="custom-1"></vo-footer>
+				</template>
+			</demo-snippet>
+		</div>
+		
+		<div class="vertical-section-container centered">
+			<h3>Basis vo-footer met tekst kleur demo</h3>
+			<demo-snippet class="centered-demo">
+				<template>
+					<style>
+						.custom-2 {
+							--vo-footer-color: rgb(51, 51, 51);
+							--vo-footer-a-color: rgb(51, 51, 51);
+							--vo-footer-a-hover-color: black;
+						}
+					</style>
+					<vo-footer class="custom-2"></vo-footer>
 				</template>
 			</demo-snippet>
 		</div>

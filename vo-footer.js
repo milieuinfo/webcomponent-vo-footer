@@ -15,12 +15,12 @@ class VoFooter extends LitElement {
 			<style>
 				:host {
 					background: rgb(51, 51, 51);
-					color: rgb(184, 184, 184);
+					color: var(--vo-footer-color, rgb(184, 184, 184));
 					font-size: 14px;
 				}
 		
 				#wrapper {
-					background: var(--vo-footer-background, 'none');
+					background: var(--vo-footer-background, none);
 					max-width: 1040px;
 					width: 100%;
 					margin: auto;
@@ -34,12 +34,12 @@ class VoFooter extends LitElement {
 				a:active,
 				a:link,
 				a:visited {
-					color: rgb(184, 184, 184);
+					color: var(--vo-footer-a-color, rgb(184, 184, 184));
 					text-decoration: none;
 				}
 		
 				a:hover {
-					color: white
+					color: var(--vo-footer-a-hover-color, white);
 				}
 		
 				.spacer {
