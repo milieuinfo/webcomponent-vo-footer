@@ -5,6 +5,17 @@ import './assets/vo-merklogo/vo-merklogo.js';
  * `vo-footer`
  * De standaard footer voor websites en applicaties van de Vlaamse overheid
  *
+ * ### Styling
+ * 
+ * De volgende properties en mixins zijn beschikbaar voor stijl:
+ * 
+ * Custom property | Description | Default
+ * ----------------|-------------|----------
+ * `--vo-footer-background` | de footer achtergrondkleur | `none`
+ * `--vo-footer-color` | de tekst kleur| `rgb(184, 184, 184)`
+ * `--vo-footer-a-color` | de link tekst kleur| `rgb(184, 184, 184)`
+ * `--vo-footer-a-hover-color` | de link zweef tekst kleur| `white`
+ *
  * @customElement
  * @polymer
  * @demo demo/index.html
@@ -15,12 +26,12 @@ class VoFooter extends LitElement {
 			<style>
 				:host {
 					background: rgb(51, 51, 51);
-					color: rgb(184, 184, 184);
+					color: var(--vo-footer-color, rgb(184, 184, 184));
 					font-size: 14px;
 				}
 		
 				#wrapper {
-					background: var(--vo-footer-background, 'none');
+					background: var(--vo-footer-background, none);
 					max-width: 1040px;
 					width: 100%;
 					margin: auto;
@@ -34,12 +45,12 @@ class VoFooter extends LitElement {
 				a:active,
 				a:link,
 				a:visited {
-					color: rgb(184, 184, 184);
+					color: var(--vo-footer-a-color, rgb(184, 184, 184));
 					text-decoration: none;
 				}
 		
 				a:hover {
-					color: white
+					color: var(--vo-footer-a-hover-color, white);
 				}
 		
 				.spacer {

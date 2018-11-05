@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "elements": [
     {
-      "description": "`vo-footer`\nDe standaard footer voor websites en applicaties van de Vlaamse overheid",
+      "description": "`vo-footer`\nDe standaard footer voor websites en applicaties van de Vlaamse overheid\n\n### Styling\n\nDe volgende properties en mixins zijn beschikbaar voor stijl:\n\nCustom property | Description | Default\n----------------|-------------|----------\n`--vo-footer-background` | de footer achtergrondkleur | `none`\n`--vo-footer-color` | de tekst kleur| `rgb(184, 184, 184)`\n`--vo-footer-a-color` | de link tekst kleur| `rgb(184, 184, 184)`\n`--vo-footer-a-hover-color` | de link zweef tekst kleur| `white`",
       "summary": "",
       "path": "dist/vo-footer.js",
       "properties": [
@@ -515,11 +515,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 12,
+              "line": 23,
               "column": 2
             },
             "end": {
-              "line": 114,
+              "line": 126,
               "column": 3
             }
           },
@@ -698,11 +698,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 11,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 115,
+          "line": 127,
           "column": 1
         }
       },
