@@ -1,5 +1,5 @@
 import { LitElement, html } from "@polymer/lit-element/lit-element";
-import "vo-merklogo/vo-merklogo";
+import "vo-footer/assets/vo-merklogo/dist/vo-merklogo";
 
 /**
  * `vo-footer`
@@ -110,14 +110,14 @@ class VoFooter extends LitElement {
 					<div id='credits'>
 						<span id='credits-vo'>Dit is een offici&euml;le website van de Vlaamse overheid</span>
 						<span id='credits-departement'>uitgegeven door
-						<a target='_blank' href='//www.omgevingvlaanderen.be'>het departement Omgeving</a></span>
+						<a id='departement' target='_blank' href='//www.omgevingvlaanderen.be'>het departement Omgeving</a></span>
 					</div>
 	 				<div id="vo-footer-content">
 	 					<slot></slot>
 	 				</div>
 	 			</div>
 	 			<div id='bottom-row'>
-	 				<a href='//www.vlaanderen.be/nl/disclaimer' target="_blank">
+	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">
 	 					Disclaimer&nbsp;
 	 					<iron-icon icon="icons:link" style="opacity:.4"></iron-icon>
 	 				</a>
