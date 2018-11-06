@@ -1,6 +1,6 @@
 import { LitElement, html } from "@polymer/lit-element/lit-element";
+import "@polymer/iron-flex-layout/iron-flex-layout";
 import "vo-footer/assets/vo-merklogo/dist/vo-merklogo";
-
 
 import "@polymer/iron-icons/iron-icons";
 
