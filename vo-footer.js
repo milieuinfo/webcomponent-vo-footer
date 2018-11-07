@@ -146,10 +146,7 @@ class VoFooter extends LitElement {
 	 				</div>
 	 			</div>
 	 			<div id='bottom-row'>
-	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">
-	 					Disclaimer&nbsp;
-	 					<iron-icon icon="icons:link" style="opacity:.4"></iron-icon>
-	 				</a>
+	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">Disclaimer</a>
 	 			<div class="spacer"></div>
 	 		</div>
 		`;

@@ -17,13 +17,10 @@
 			</template>
 		</test-fixture>
 
-
 		<script type="module">
-
 			import '../vo-footer';
 
 			suite('vo-footer', () => {
-
 				const should = chai.should();
 
 				test('bevat het logo van Vlaanderen', (done) => {
@@ -70,19 +67,7 @@
 						done();
 					});
 				});
-
-				test('De icon icons:link in de disclaimer wordt getoond', (done) => {
-					const element = fixture('vo-footer-fixture');
-					flush(() => {
-						const disclaimerElement = element.shadowRoot.querySelector('#disclaimer');
-                        const ironIconElement = disclaimerElement.querySelector('iron-icon');
-                        should.exist(ironIconElement.shadowRoot);
-						done();
-					});
-				});
-
 			});
 		</script>
-		
 	</body>
 </html>
