@@ -1,5 +1,4 @@
 import { LitElement, html } from "@polymer/lit-element/lit-element";
-import "@polymer/iron-flex-layout/iron-flex-layout";
 import "vo-footer/assets/vo-merklogo/dist/vo-merklogo";
 
 import "@polymer/iron-icons/iron-icons";
@@ -57,24 +56,44 @@ class VoFooter extends LitElement {
 				}
 		
 				.spacer {
-					@apply --layout-flex-10;
+					-ms-flex: 10;
+	        		-webkit-flex: 10;
+	        		flex: 10;
 				}
 		
 				#wrapper {
-					@apply --layout-vertical;
+					display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+					-ms-flex-direction: column;
+			        -webkit-flex-direction: column;
+			        flex-direction: column;
 					align-items: stretch;
 				}
 		
 				#top-row {
-					@apply --layout-horizontal;
+					display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+					-ms-flex-direction: row;
+			        -webkit-flex-direction: row;
+			        flex-direction: row;
 					margin: 20px 0;
 				}
 		
 				#bottom-row {
-					@apply --layout-horizontal;
-					@apply --layout-center;
-					@apply --layout-justified;
-		
+					display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+					-ms-flex-direction: row;
+			        -webkit-flex-direction: row;
+			        flex-direction: row;
+					-ms-flex-align: center;
+			        -webkit-align-items: center;
+			        align-items: center;
+			        -ms-flex-pack: justify;
+			        -webkit-justify-content: space-between;
+			        justify-content: space-between;
 					border-top: solid 1px #444;
 					padding: 3px 10px;
 					min-height: 36px;
@@ -86,8 +105,15 @@ class VoFooter extends LitElement {
 				}
 		
 				#credits {
-					@apply --layout-vertical;
-					@apply --layout-start;
+					display: -ms-flexbox;
+			        display: -webkit-flex;
+			        display: flex;
+					-ms-flex-direction: column;
+			        -webkit-flex-direction: column;
+			        flex-direction: column;
+					-ms-flex-align: start;
+			        -webkit-align-items: flex-start;
+			        align-items: flex-start;
 				}
 		
 				#vo-footer-content {
