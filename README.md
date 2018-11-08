@@ -8,12 +8,6 @@ De standaard footer voor websites en applicaties van de Vlaamse overheid.
 npm install --save vo-footer
 ```
 
-## Gebruik
-Maak gebruik van de component in de dist map.
-
-### Gebruik in combinatie met Polymer 2
-In combinatie met Polymer 2 kan er best gebruik gemaakt worden van de component in de root map. Deze component maakt gebruik van imports met relatieve paden, daar de component in de dist map gebruik maakt van bare imports specifiers.
-
 ### Documentatie en demo
 
 [Publicatie van documentatie en demo](https://milieuinfo.github.io/webcomponent-vo-footer)
