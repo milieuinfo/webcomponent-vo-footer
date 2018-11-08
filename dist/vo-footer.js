@@ -1,7 +1,5 @@
-import { LitElement, html } from "@polymer/lit-element/lit-element";
-import "vo-footer/assets/vo-merklogo/dist/vo-merklogo";
-
-import "@polymer/iron-icons/iron-icons";
+import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
+import '../vo-merklogo/vo-merklogo.js';
 
 /**
  * `vo-footer`
@@ -99,11 +97,6 @@ class VoFooter extends LitElement {
 					min-height: 36px;
 				}
 		
-				#bottom-row iron-icon {
-					--iron-icon-width: 14px;
-					--iron-icon-height: 14px;
-				}
-		
 				#credits {
 					display: -ms-flexbox;
 			        display: -webkit-flex;
@@ -146,10 +139,7 @@ class VoFooter extends LitElement {
 	 				</div>
 	 			</div>
 	 			<div id='bottom-row'>
-	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">
-	 					Disclaimer&nbsp;
-	 					<iron-icon icon="icons:link" style="opacity:.4"></iron-icon>
-	 				</a>
+	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">Disclaimer</a>
 	 			<div class="spacer"></div>
 	 		</div>
 		`;

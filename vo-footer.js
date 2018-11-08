@@ -1,7 +1,5 @@
-import { LitElement, html } from "./assets/@polymer/lit-element/lit-element.js";
-import './assets/vo-merklogo/dist/vo-merklogo.js';
-
-import './assets/@polymer/iron-icons/iron-icons.js';
+import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
+import '../vo-merklogo/vo-merklogo.js';
 
 /**
  * `vo-footer`
@@ -97,11 +95,6 @@ class VoFooter extends LitElement {
 					border-top: solid 1px #444;
 					padding: 3px 10px;
 					min-height: 36px;
-				}
-		
-				#bottom-row iron-icon {
-					--iron-icon-width: 14px;
-					--iron-icon-height: 14px;
 				}
 		
 				#credits {
