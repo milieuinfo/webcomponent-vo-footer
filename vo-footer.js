@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import { LitElement, html } from "./assets/vodomg-litelement/@polymer/lit-element/lit-element.js";
 import './assets/vo-merklogo/dist/vo-merklogo.js';
-=======
-import { LitElement, html } from "../@polymer/lit-element/lit-element.js";
-import '../vo-merklogo/vo-merklogo.js';
->>>>>>> branch 'master' of https://github.com/milieuinfo/webcomponent-vo-footer.git
 
 /**
  * `vo-footer`
