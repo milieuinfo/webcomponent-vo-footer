@@ -1,4 +1,4 @@
-import { LitElement, html } from "../../../assets/@polymer/lit-element/lit-element.js";
+import { LitElement, html } from "../../@polymer/lit-element/lit-element";
 
 /**
  * `vo-merklogo` Het logo van de Vlaamse overheid
@@ -19,7 +19,7 @@ class VoMerklogo extends LitElement {
        */
       tekst: String,
       /**
-       * Tekst lit-html met een hoofdlijn tekst en bijlijn die bepaald kan worden door de `tekst` property
+       * Tekst lit-html met een hoofdlijn tekst en bijlijn die bepaald kan worden door de `tekst` property.
        */
       _tekst: String
     };
@@ -95,8 +95,8 @@ class VoMerklogo extends LitElement {
 	            }
 	        </style>
 	        
-	        <div id="leeuw"></div>
-	        ${this._tekst}
+	    	<div id="leeuw"></div>
+	    	${this._tekst}
     	`;
   }
 
