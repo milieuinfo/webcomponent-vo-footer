@@ -18,7 +18,7 @@ import '../../node_modules/vo-merklogo/vo-merklogo.js';
  *
  * @customElement
  * @polymer
- * @demo demo/index.html
+ * @demo demo/vo-footer.html
  */
 class VoFooter extends LitElement {
 	render() {
