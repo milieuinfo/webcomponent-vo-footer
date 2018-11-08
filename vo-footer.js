@@ -21,6 +21,11 @@ import '../../node_modules/vo-merklogo/vo-merklogo.js';
  * @demo demo/vo-footer.html
  */
 class VoFooter extends LitElement {
+	/**
+	 * Rendert het element.
+	 * 
+	 * @return {TemplateResult}
+	 */
 	render() {
 		return html`
 			<style>
