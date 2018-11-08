@@ -61,7 +61,7 @@
 						const disclaimerElement = element.shadowRoot.querySelector('#disclaimer');
 						should.exist(disclaimerElement);
 
-						assert.isTrue(/\s+Disclaimer\s/.test(disclaimerElement.textContent));
+						assert.equal(disclaimerElement.textContent, 'Disclaimer');
 						assert.equal(disclaimerElement.href, 'http://www.vlaanderen.be/nl/disclaimer');
 	
 						done();
