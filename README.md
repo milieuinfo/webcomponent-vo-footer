@@ -10,7 +10,7 @@ npm install --save vo-footer
 
 ### Documentatie en demo
 
-[Publicatie van documentatie en demo](https://milieuinfo.github.io/webcomponent-vo-footer)
+[Publicatie van documentatie en demo](https://milieuinfo.github.io/webcomponenten-demo)
 
 ## Ontwikkelaars
 
