@@ -1,5 +1,3 @@
-const os = require('os');
-
 module.exports = {
     activeBrowsers: [{
         browserName: "chrome",
@@ -9,7 +7,7 @@ module.exports = {
         url: "http://selenium-hub:4444/wd/hub"
     }],
     webserver: {
-        hostname: process.env.FQDN || os.hostname(),
+        hostname: "tests"
     },
     plugins: {
         local: false,
