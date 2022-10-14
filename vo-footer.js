@@ -6,9 +6,9 @@ import '../../node_modules/vo-merklogo/vo-merklogo.js';
  * De standaard footer voor websites en applicaties van de Vlaamse overheid
  *
  * ### Styling
- * 
+ *
  * De volgende properties en mixins zijn beschikbaar voor stijl:
- * 
+ *
  * Custom property | Description | Default
  * ----------------|-------------|----------
  * `--vo-footer-background` | de footer achtergrondkleur | `none`
@@ -23,7 +23,7 @@ import '../../node_modules/vo-merklogo/vo-merklogo.js';
 class VoFooter extends LitElement {
 	/**
 	 * Rendert het element.
-	 * 
+	 *
 	 * @return {TemplateResult}
 	 */
 	render() {
@@ -144,7 +144,7 @@ class VoFooter extends LitElement {
 	 				</div>
 	 			</div>
 	 			<div id='bottom-row'>
-	 				<a id='disclaimer' href='//www.vlaanderen.be/nl/disclaimer' target="_blank">Disclaimer</a>
+	 				<a id='toegankelijkheid' href='#/toegankelijkheid'>Toegankelijkheid</a>
 	 			<div class="spacer"></div>
 	 		</div>
 		`;
