@@ -3,6 +3,8 @@ services:
   selenium-hub:
     image: ${DOCKER_REGISTRY}selenium/hub:3.141.0-actinium
     container_name: selenium-hub
+    networks:
+      - test-network
     ports:
       - '4444:4444'
       - '4443:4443'
@@ -11,6 +13,8 @@ services:
     image: ${DOCKER_REGISTRY}selenium/node-chrome:3.141.0-actinium
     depends_on:
       - selenium-hub
+    networks:
+      - test-network
     environment:
       - HUB_HOST=selenium-hub
       - HUB_PORT=4444
@@ -18,6 +22,8 @@ services:
     image: ${DOCKER_REGISTRY}selenium/node-firefox:3.4.0
     depends_on:
       - selenium-hub
+    networks:
+      - test-network
     environment:
       - HUB_PORT_4444_TCP_ADDR=selenium-hub
       - HUB_PORT_4444_TCP_PORT=4444
@@ -28,6 +34,8 @@ services:
       - selenium-chrome
       - selenium-firefox
     working_dir: /workdir
+    networks:
+      - test-network
     volumes:
       - ${HOME:-.}/.npmrc:/root/.npmrc:ro
       - ${HOME:-.}/.gitconfig:/root/.gitconfig:ro
@@ -35,3 +43,6 @@ services:
       - ..:/data:ro
       - ./wct.docker.conf.js:/workdir/wct.conf.js:ro
     command: bash -c "cp -R /data/. /workdir && npm install && npm run test"
+networks:
+  test-network:
+    driver: bridge
