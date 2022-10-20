@@ -19,7 +19,9 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - no_proxy=selenium-hub,tests
+      - http_proxy=${http_proxy}
+      - https_proxy=${https_proxy}
+      - no_proxy=${no_proxy},selenium-hub,tests
   selenium-firefox:
     image: ${DOCKER_REGISTRY}selenium/node-firefox:100.0.2-20220531
     depends_on:
@@ -30,7 +32,9 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - no_proxy=selenium-hub,tests
+      - http_proxy=${http_proxy}
+      - https_proxy=${https_proxy}
+      - no_proxy=${no_proxy},selenium-hub,tests
   tests:
     image: ${DOCKER_REGISTRY}node:10
     depends_on:
