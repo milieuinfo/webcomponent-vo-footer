@@ -144,7 +144,7 @@ class VoFooter extends LitElement {
 	 				</div>
 	 			</div>
 	 			<div id='bottom-row'>
-	 				<a id='toegankelijkheid' href='/#/toegankelijkheid'>Toegankelijkheid</a>
+	 				<a id='toegankelijkheid' href='#/toegankelijkheid'>Toegankelijkheid</a>
 	 			<div class="spacer"></div>
 	 		</div>
 		`;
