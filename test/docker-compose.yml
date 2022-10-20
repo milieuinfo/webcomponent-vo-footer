@@ -1,7 +1,7 @@
 version: "3"
 services:
   selenium-hub:
-    image: ${DOCKER_REGISTRY}selenium/hub:4.2.1-20220531
+    image: ${DOCKER_REGISTRY}selenium/hub:3.141.0-actinium
     container_name: selenium-hub
     networks:
       - test-network
@@ -10,31 +10,23 @@ services:
       - '4443:4443'
       - '4442:4442'
   selenium-chrome:
-    image: ${DOCKER_REGISTRY}selenium/node-chrome:102.0-20220531
+    image: ${DOCKER_REGISTRY}selenium/node-chrome:3.141.0-actinium
     depends_on:
       - selenium-hub
     networks:
       - test-network
     environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - http_proxy=${http_proxy}
-      - https_proxy=${https_proxy}
-      - no_proxy=${no_proxy},selenium-hub,host
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
   selenium-firefox:
-    image: ${DOCKER_REGISTRY}selenium/node-firefox:100.0.2-20220531
+    image: ${DOCKER_REGISTRY}selenium/node-firefox:3.4.0
     depends_on:
       - selenium-hub
     networks:
       - test-network
     environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - http_proxy=${http_proxy}
-      - https_proxy=${https_proxy}
-      - no_proxy=${no_proxy},selenium-hub,host
+      - HUB_PORT_4444_TCP_ADDR=selenium-hub
+      - HUB_PORT_4444_TCP_PORT=4444
   tests:
     image: ${DOCKER_REGISTRY}node:10
     depends_on:
