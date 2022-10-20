@@ -26,7 +26,7 @@
     "build:dist": "polymer build",
     "build:local": "npm run clean && npm install && npm run test && npm run build:dist && npm run build:docs",
     "dev": "browser-sync start --proxy localhost:8080 --startPath / --serveStatic . --files .",
-    "test": "polymer test --verbose -l chrome,firefox --expanded",
+    "test": "polymer test -l chrome,firefox --expanded -v",
     "test:chrome": "polymer test -l chrome --expanded",
     "test:firefox": "polymer test -l firefox --expanded -p",
     "release": "np",
