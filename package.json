@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "np": "3.0.4",
-    "polymer-cli": "1.8.1",
+    "polymer-cli": "1.9.11",
     "wct-browser-legacy": "1.0.2",
     "@polymer/iron-demo-helpers": "3.0.2",
     "@polymer/iron-component-page": "4.0.1",
